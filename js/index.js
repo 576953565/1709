@@ -6,8 +6,8 @@
     this.cw = cw;
     this.ch = ch;
     this.particles = [];
-    this.particleRate = 6;
-    this.gravity = 0.15;
+    this.particleRate = 20;
+    this.gravity = .3;
     this.init = function() {
       this.loop();
     };
@@ -19,8 +19,8 @@
       return ~~((Math.random() * (rMa - rMi + 1)) + rMi);
     };
     this.Particle = function() {
-      var newWidth = _this.rand(1, 20);
-      var newHeight = _this.rand(1, 45);
+      var newWidth = _this.rand(2,10);
+      var newHeight = _this.rand(1, 60);
       this.x = _this.rand(10 + (newWidth / 2), _this.cw - 10 - (newWidth / 2));
       this.y = -newHeight;
       this.vx = 0;
@@ -145,7 +145,7 @@
     });
     stage = new PIXI.Container();
     waveCount = 2000;
-    partCount = 1000;
+    partCount = 100;
     waves = [];
     parts = [];
     document.body.appendChild(renderer.view);

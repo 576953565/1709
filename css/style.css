@@ -47,13 +47,13 @@
 }
 .da-thumbs {
 	list-style: none;
-	width: 60%;
+	width: 70%;
 	height: 600px;
 	position: relative;
 	margin: 20px auto;
 	padding: 0;
 	position: absolute;
-	left: 20%;
+	left: 15%;
 	overflow: auto;
 	height: 90%;
 	margin-top: 140px;
